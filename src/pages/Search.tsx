@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MapPin, Search, Star, Filter, ArrowLeft, MessageCircle } from "lucide-react";
+import { MapPin, Search as SearchIcon, Star, Filter, ArrowLeft, MessageCircle } from "lucide-react";
 import ChatAssistant from "@/components/ChatAssistant";
 import FilterPanel from "@/components/FilterPanel";
 import PlaceCard from "@/components/PlaceCard";
@@ -166,7 +165,7 @@ const Search = () => {
                 size="sm"
                 className="absolute right-2 top-2 bg-gradient-to-r from-orange-500 to-green-500 hover:from-orange-600 hover:to-green-600 text-white"
               >
-                <Search className="w-4 h-4" />
+                <SearchIcon className="w-4 h-4" />
               </Button>
             </div>
             <Button
